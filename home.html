@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAARTHI</title>
+</head>
+<body>
+    <!--This is button that changes display property of below form to block on click-->
+    <button class="open-button" onclick="openForm()">New Employee</button>
+
+    <!--This is form which contains has input field for every attribute of data along with label-->
+    <div class="form-popup" id="myForm">
+        <form class="form-container" id="fcon">
+          <h1>New Employee</h1>
+      
+          <label for="empname"><b>Name</b></label>
+          <input type="text" placeholder="Enter Employee Name" name="empname" id="ename" >
+
+          <label for="empid"><b>ID</b></label>
+          <input type="text" placeholder="Enter Employee ID" name="empid" id="eid" >
+
+          <label for="empdept"><b>Department</b></label>
+          <select name="empdept" id="edept">
+            <option value="" selected="selected" id="ed1">Select Department</option>
+          </select>
+
+          <label for="empemailid"><b>Email ID</b></label>
+          <input type="text" placeholder="Enter Employee Email ID" name="empemailid" id="eemailid" >
+
+          <label for="empdoj"><b>DOJ</b></label>
+          <input type="date" id="edoj" name="empdoj">
+      
+          <button type="button" class="btn" id="submit" onclick="addData()">Submit</button>
+          <button type="button" class="btn clear" onclick="clearForm()">Clear</button>
+          <button type="button" class="btn close" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+      <div class="up-tab">
+           <h3>New Hiring details</h3>
+      </div>
+
+      <!--It is the table where we add all the data through js-->
+      <div class="emp-table" id="table-emp">
+          <table id="etable">
+            <tr>
+              <th>⚔</th>
+              <th>Name</th>
+              <th>Employee ID</th> 
+              <th>Department</th>
+              <th>Email ID</th>
+              <th>DOJ</th>
+            </tr>
+          </table>
+      </div>
+</body>
+</html>

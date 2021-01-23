@@ -1,0 +1,133 @@
+/*Select font for whole body of our page*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*styling of New Employee Button*/
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    left: 40%;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    width: 20%;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    top:5px;
+    bottom: 5px;
+    overflow-y: scroll;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .form-container input, .form-container select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  /*Add styling when user write code on field*/
+  .form-container input:focus, .form-container select:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  .form-container .clear {
+    background-color: #555;
+  }
+
+  .form-container .close {
+    background-color: red;
+  }
+
+  /*Effect when we hover on button*/
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .up-tab >h3 {
+    position: fixed;
+    top: 50px;
+  }
+
+  /* Add styles to our table */
+  .emp-table{
+      position: fixed;
+      top: 100px;
+      width: 100%;
+      overflow-y: auto;
+      height:550px;
+  }
+
+  .emp-table table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .emp-table table tr th {
+      background-color: blue;
+      padding: 15px 5px;
+      position: sticky;
+      top: 0px;
+  }
+
+  .emp-table table tr td {
+      background-color: goldenrod;
+      padding: 15px 5px;
+  }
+  
+  .btr {
+    background-color: goldenrod;
+    border: none;
+  }
+
+  /* Make website responsive*/
+  @media (min-width: 1200px) {
+    .form-container {
+        max-width: 400px;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 1199px) {
+    .form-container {
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .form-container {
+      max-width: 200px;
+    }
+  }
+  

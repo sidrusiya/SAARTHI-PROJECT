@@ -1,0 +1,11 @@
+FRONTEND ENGINEER (INTERN)
+
+1. Create a button new employee that makes form visible through JS.
+
+2. Then design a form which contains input field for all details. Display property by default do none.
+
+3. Makes a table and design the head of the table and row are added dynamically to this table through JS.
+
+4. In every row there is one cross button which deletes the corresponding data row of the table.
+
+5. In form, design a dropdown through JS, button for closing the form and clearing the form along with submit button.
